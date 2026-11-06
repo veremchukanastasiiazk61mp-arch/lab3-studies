@@ -1,0 +1,13 @@
+{
+ "mode": "fixed",
+ "init_delay_s": 0,
+ "profile": "30:311,60:711,90:311",
+ "X1": 1036.85,
+ "XR": 789.9,
+ "base_rps": 311,
+ "jump_rps": 711,
+ "t0_unix": 1793221671.256,
+ "prom_samples": 5796,
+ "hpa_describe": null,
+ "pods": "NAME                   READY   STATUS    RESTARTS      AGE   IP           NODE                  NOMINATED NODE   READINESS GATES\nweb-6c64cf6686-2thsz   1/1     Running   2 (10h ago)   23h   10.42.0.10   k3d-studies-agent-0   <none>           <none>\nweb-6c64cf6686-dft52   1/1     Running   0             9h    10.42.2.8    k3d-studies-agent-1   <none>           <none>\nweb-6c64cf6686-fzztd   1/1     Running   2 (10h ago)   22h   10.42.0.9    k3d-studies-agent-0   <none>           <none>\nweb-6c64cf6686-r8t74   1/1     Running   2 (10h ago)   23h   10.42.2.6    k3d-studies-agent-1   <none>           <none>\nweb-6c64cf6686-tzkb4   1/1     Running   0             9h    10.42.0.12   k3d-studies-agent-0   <none>           <none>\n"
+}

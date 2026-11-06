@@ -1,0 +1,87 @@
+{
+  "X_rps": null,
+  "X_std_rps": null,
+  "X_step": null,
+  "stop_reason": "profile_finished",
+  "steps": [
+    {
+      "segment": 1,
+      "duration_s": 30,
+      "offered_rps": 311,
+      "achieved_mean_rps": 311.2,
+      "p99_ms": 23.21,
+      "non_2xx": 0,
+      "conn_errors": 8,
+      "window_s": [
+        10,
+        30
+      ]
+    },
+    {
+      "segment": 2,
+      "duration_s": 60,
+      "offered_rps": 711,
+      "achieved_mean_rps": 710.92,
+      "p99_ms": 216.84,
+      "non_2xx": 0,
+      "conn_errors": 0,
+      "window_s": [
+        40,
+        90
+      ]
+    },
+    {
+      "segment": 3,
+      "duration_s": 90,
+      "offered_rps": 311,
+      "achieved_mean_rps": 310.975,
+      "p99_ms": 22.287,
+      "non_2xx": 0,
+      "conn_errors": 4,
+      "window_s": [
+        100,
+        180
+      ]
+    }
+  ],
+  "responses_2xx_by_pod": {
+    "web-678dd48bdf-9lq4q": 63590,
+    "web-678dd48bdf-cnsgx": 5400,
+    "web-678dd48bdf-886v5": 10977
+  },
+  "generator_lag_p99_ms": 15.686,
+  "config": {
+    "name": "profile_hpa_init15",
+    "url": "http://localhost:8080",
+    "path": "/studies/{id}",
+    "noop": false,
+    "warmup_s": 10,
+    "step_rate": 200,
+    "step_seconds": 30,
+    "transient_s": 10,
+    "timeout_s": 5.0,
+    "procs": 4,
+    "max_conns": 10,
+    "g": null,
+    "max_rate": 20000,
+    "cpu_count": 8,
+    "conns": 40,
+    "conns_per_proc": 10,
+    "reqs_per_conn": 100,
+    "profile": [
+      [
+        30,
+        311
+      ],
+      [
+        60,
+        711
+      ],
+      [
+        90,
+        311
+      ]
+    ],
+    "t0_unix": 1793222304.441
+  }
+}

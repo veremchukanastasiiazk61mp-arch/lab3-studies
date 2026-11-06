@@ -1,0 +1,13 @@
+{
+ "mode": "hpa",
+ "init_delay_s": 15,
+ "profile": "30:311,60:711,90:311",
+ "X1": 1036.85,
+ "XR": 789.9,
+ "base_rps": 311,
+ "jump_rps": 711,
+ "t0_unix": 1793222304.441,
+ "prom_samples": 2386,
+ "hpa_describe": "Name:                                                  web\nNamespace:                                             studies\nLabels:                                                <none>\nAnnotations:                                           <none>\nCreationTimestamp:                                     Wed, 28 Oct 2026 23:17:00 +0200\nReference:                                             Deployment/web\nMetrics:                                               ( current / target )\n  resource cpu on pods  (as a percentage of request):  43% (216m) / 70%\nMin replicas:                                          1\nMax replicas:                                          5\nBehavior:\n  Scale Up:\n    Stabilization Window: 0 seconds\n    Select Policy: Max\n    Policies:\n      - Type: Pods     Value: 4    Period: 15 seconds\n      - Type: Percent  Value: 100  Period: 15 seconds\n  Scale Down:\n    Stabilization Window: 30 seconds\n    Select Policy: Max\n    Policies:\n      - Type: Percent  Value: 100  Period: 15 seconds\nDeployment pods:       2 current / 2 desired\nConditions:\n  Type            Status  Reason              Message\n  ----            ------  ------              -------\n  AbleToScale     True    ReadyForNewScale    recommended size matches current size\n  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)\n  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range\nEvents:\n  Type    Reason             Age   From                       Message\n  ----    ------             ----  ----                       -------\n  Normal  SuccessfulRescale  2m9s  horizontal-pod-autoscaler  New size: 3; reason: cpu resource utilization (percentage of request) above target\n  Normal  SuccessfulRescale  54s   horizontal-pod-autoscaler  New size: 2; reason: All metrics below target\n",
+ "pods": "NAME                   READY   STATUS    RESTARTS   AGE     IP           NODE                  NOMINATED NODE   READINESS GATES\nweb-678dd48bdf-886v5   1/1     Running   0          2m9s    10.42.2.9    k3d-studies-agent-1   <none>           <none>\nweb-678dd48bdf-9lq4q   1/1     Running   0          5m23s   10.42.0.15   k3d-studies-agent-0   <none>           <none>\n"
+}

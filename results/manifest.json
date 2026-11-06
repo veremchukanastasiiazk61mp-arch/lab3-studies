@@ -1,0 +1,89 @@
+{
+  "runs": {
+    "1": {
+      "name": "step_n1",
+      "t0_unix": 1793137720.013,
+      "X_rps": 1036.85,
+      "X_std_rps": 99.25,
+      "X_step": 20,
+      "stop_reason": "two_steps_below_0.9",
+      "unreached": false,
+      "prom_samples": 5088,
+      "placement": {
+        "web-6c64cf6686-r8t74": "k3d-studies-agent-1"
+      }
+    },
+    "2": {
+      "name": "step_n2",
+      "t0_unix": 1793138489.17,
+      "X_rps": 1390.65,
+      "X_std_rps": 95.979,
+      "X_step": 28,
+      "stop_reason": "two_steps_below_0.9",
+      "unreached": false,
+      "prom_samples": 10406,
+      "placement": {
+        "web-6c64cf6686-2thsz": "k3d-studies-agent-0",
+        "web-6c64cf6686-r8t74": "k3d-studies-agent-1"
+      }
+    },
+    "4": {
+      "name": "step_n4",
+      "t0_unix": 1793186207.072,
+      "X_rps": 699.25,
+      "X_std_rps": 93.122,
+      "X_step": 14,
+      "stop_reason": "two_steps_below_0.9",
+      "unreached": false,
+      "prom_samples": 9319,
+      "placement": {
+        "web-6c64cf6686-2thsz": "k3d-studies-agent-0",
+        "web-6c64cf6686-dft52": "k3d-studies-agent-1",
+        "web-6c64cf6686-fzztd": "k3d-studies-agent-0",
+        "web-6c64cf6686-r8t74": "k3d-studies-agent-1"
+      }
+    },
+    "5": {
+      "name": "step_n5",
+      "t0_unix": 1793186758.969,
+      "X_rps": 789.9,
+      "X_std_rps": 129.616,
+      "X_step": 17,
+      "stop_reason": "two_steps_below_0.9",
+      "unreached": false,
+      "prom_samples": 13351,
+      "placement": {
+        "web-6c64cf6686-2thsz": "k3d-studies-agent-0",
+        "web-6c64cf6686-dft52": "k3d-studies-agent-1",
+        "web-6c64cf6686-fzztd": "k3d-studies-agent-0",
+        "web-6c64cf6686-r8t74": "k3d-studies-agent-1",
+        "web-6c64cf6686-tzkb4": "k3d-studies-agent-0"
+      }
+    }
+  },
+  "procs": 4,
+  "step_rate": 50,
+  "step_seconds": 30,
+  "transient_s": 10,
+  "conns": 40,
+  "reqs_per_conn": 100,
+  "R": 5,
+  "resources": {
+    "limits": {
+      "cpu": "1",
+      "memory": "512Mi"
+    },
+    "requests": {
+      "cpu": "500m",
+      "memory": "128Mi"
+    }
+  },
+  "db_pool_size": "15",
+  "startup_delay_s": "0",
+  "nodes": [
+    "NAME                   STATUS   ROLES                  AGE   VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE           KERNEL-VERSION                      CONTAINER-RUNTIME",
+    "k3d-studies-agent-0    Ready    <none>                 14h   v1.31.5+k3s1   172.20.0.5    <none>        K3s v1.31.5+k3s1   6.18.54.1-microsoft-standard-WSL2   containerd://1.7.23-k3s2",
+    "k3d-studies-agent-1    Ready    <none>                 14h   v1.31.5+k3s1   172.20.0.2    <none>        K3s v1.31.5+k3s1   6.18.54.1-microsoft-standard-WSL2   containerd://1.7.23-k3s2",
+    "k3d-studies-server-0   Ready    control-plane,master   14h   v1.31.5+k3s1   172.20.0.4    <none>        K3s v1.31.5+k3s1   6.18.54.1-microsoft-standard-WSL2   containerd://1.7.23-k3s2"
+  ]
+}
